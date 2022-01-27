@@ -4,13 +4,13 @@ import os,random
 from threading import Thread
 from time import sleep
 
-import vlc
 from termcolor import colored
-
+from playsound import playsound
 from config import *
+from arts import art
 
 # Importing module specified in the config file
-art = __import__(f'arts.{artFile}', globals(), locals(), ['*'])
+# art = __import__(f'arts.{artFile}', globals(), locals(), ['*'])
 
 def replaceMultiple(mainString, toBeReplace, newString):
     """[Replace a set of multiple sub strings with a new string]
@@ -64,23 +64,13 @@ def pprint(art,time):
 
 def pAudio():
     if playAudio:
-        p = vlc.MediaPlayer(resource_path(audio))
-        p.play()
+        playsound(resource_path(audio))
 
 # Code reader
-with open(resource_path(__file__)) as f_in:
-	code = f_in.read()
-        
+
+
 def pcode():
-    # Print the code before wishing 
-    if codePrint:
-        for i in range(len(code)):
-            print(colored(code[i], codeColor),sep='', end='',flush= True);sleep(codingSpeed)
-        input('\n\n'+colored('python3','blue')+colored(' PyBirthdayWish.py','yellow'))
-        os.system('cls' if os.name == 'nt' else 'clear')
-    else:
-        input(colored('press F11 and hit {Enter}...','blue'))
-        os.system('cls' if os.name == 'nt' else 'clear')
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 # Clearing terminal
 os.system('cls' if os.name == 'nt' else 'clear')
