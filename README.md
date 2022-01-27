@@ -16,7 +16,7 @@ pip install -r requirements.txt
 * 如果一切正常，您可以使用下面的命令使用pyinstaller创建一个可执行文件
     * windows
         ```bash
-        pyinstaller --noconfirm --onefile --console --icon "icon.ico" --no-embed-manifest --add-data "arts;arts/"  --add-data "config.py;." --add-data "HappyBirthday.mp3;." --add-data "PyBirthdayWish.py;."  "PyBirthdayWish.py"
+        pyinstaller --noconfirm --onefile --console --icon "icon.ico" --add-data "arts;arts/"  --add-data "config.py;." --add-data "HappyBirthday.mp3;." --add-data "PyBirthdayWish.py;."  "PyBirthdayWish.py"
         ```
     * 其他系统
         ```bash

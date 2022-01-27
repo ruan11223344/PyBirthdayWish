@@ -1,4 +1,4 @@
 termcolor
 python-vlc
 pyinstaller
-playsound
+playsound==1.2.2
