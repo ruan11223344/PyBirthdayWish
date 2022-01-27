@@ -1,5 +1,7 @@
+<p align="center">
 <img src="image/PyBirthdayWish.gif" align="center" alt="PyBirthdayWish GIF" />
 <h2 align="center">用python祝福你爱的人吧</h2>
+</p>
 <p align="center">
 
 ## 🕯️ Steps to wish
