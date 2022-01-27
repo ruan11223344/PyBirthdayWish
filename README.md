@@ -5,8 +5,10 @@
 <p align="center">
 
 ## 🕯️ 建议打包为可执行文件发送给对方
-
-pip install -r requirements.txt
+* 安装依赖
+```bash
+    pip install -r requirements.txt
+```
 
 * 用Python3 运行 ``PyBirthdayWish.py``
     ```bash
